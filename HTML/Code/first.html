@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <!-- comments are mentioned this way in html. And they are important -->
+        <!-- Title of the Page -->
+        <title>
+            First Page
+        </title>
+        <style>
+            p {
+                color: blueviolet;
+            }
+            .col{
+                padding-top: 10px;
+            }
+        </style>
+        <body>
+            
+            <h3>Anchor tag</h3>
+            <a href="http://www.google.com">Click here to open google</a>
+            
+            <hr>
+            <h3>Bold and Strong tag</h3>
+            <b>Bold Text</b>
+            <br>
+            <strong>strong Text</strong>
+
+            <hr>
+            <h3>Big and small tag</h3>
+            <big>Big Text</big>
+            <br>
+            <!-- This tag is to display things in small -->
+            <small>This is sample for small</small>
+            <hr>
+            <h3>Button tag</h3>
+            <button name="click_button" id="click_button" type="button">Click on button</button>
+            <br>
+            
+            <hr>
+            <h3>Heading tag</h3>
+            <div id="div_heading">
+                <!-- Heading Tags from H1-H6 -->
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <br>
+            </div>
+
+            <!-- HR tag -->
+            <hr>
+            <br>
+            
+            <i>Italic Font</i>
+            <br>
+            <hr>
+            <h3>Image tag</h3>
+            <!-- Image tag has attribute src -->
+            <!-- Image tag height and width are mentioned in pixels -->
+            <img src="5.jpg" alt="alternate text if image doesnt appear" height="200" width="200">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png" alt="alternate text if image doesnt appear" height="200" width="200">
+            <br>
+            <br>
+
+            <hr>
+            <h3>Heaader and Nav tag</h3>
+            <header>
+                <nav>
+                    <a href="first.html">First</a> |
+                    <a href="second.html">Second</a> |
+                    <a href="third.html">Third</a> |
+                    <a href="fourth.html">Fourth</a>
+                </nav>
+            </header>
+            <br>
+            <hr>
+
+
+            <!-- This is paragraph tag-->
+            <p>This is a paragraph tag</p>
+            <br>
+            <hr>
+
+            <section>
+                <h3>Table Tag along with thead,tbody, tfoot, th, tr, td </h3>
+                <table border="1">
+                    <caption>General</caption>
+                    <thead>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Age</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Deep Vira</td>
+                            <td>deepvira45@gmail.com</td>
+                            <td>9856985612</td>
+                            <td>Mira road</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>test</td>
+                            <td>test45@gmail.com</td>
+                            <td>9856127456</td>
+                            <td>London</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Doe</td>
+                            <td>johndoe45@gmail.com</td>
+                            <td>9856987412</td>
+                            <td>New York</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Test 2 </td>
+                            <td>test2@gmail.com</td>
+                            <td>9851125612</td>
+                            <td>India</td>
+                            <td>21</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Age</th>
+                    </tfoot>
+                </table>
+            </section>
+
+            <hr>
+            <div class="iframe">
+                <h3>IFrame</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q0hyYWKXF0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>iframe can be used for youtube videos, maps,etc</p>
+            </div>
+            <hr>
+            <div>
+                <h3>Form</h3>
+                <br>
+                <form action="second.html" method="GET">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email">
+                    
+                    <label for="password">Password: </label>
+                    <input type="password" name="password">
+                    
+                    <label for="gender">Gender: </label>
+                    <input type="radio" name="gender" value="Male">
+                    <input type="radio" name="gender" value="female">
+                    
+                    <label for="skills">Skills: </label>
+                    <input type="checkbox" name="skills" value="C++"> C++
+                    <input type="checkbox" name="skills" value="HTML"> HTML
+                    <input type="checkbox" name="skills" value="Python"> Python
+                    <input type="checkbox" name="skills" value="No SQL"> No SQL
+
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+            
+            <hr>
+            
+            <div class="row">
+                <h3>Form</h3>
+                <form action="second.html" method="GET">
+                    <div class="col">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="col">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="col">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="col">
+                        <label for="gender">Gender: </label>
+                        <label for="male">Male: </label>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="Female">Female: </label>
+                        <input type="radio" name="gender" value="female">
+                    </div>
+                    <div class="col">
+                        <label for="skills">Skills: </label>
+                        <input type="checkbox" name="skills" value="C++">
+                        <label for="skills"> C++ </label>
+                        <input type="checkbox" name="skills" value="HTML">
+                        <label for="skills"> HTML </label>
+                        <input type="checkbox" name="skills" value="Python">
+                        <label for="skills"> Python </label>
+                        <input type="checkbox" name="skills" value="No SQL">
+                        <label for="skills"> No SQL </label>
+                    </div>
+                    <div class="col">
+                        <label for="cars">Choose a car:</label>
+                        <select id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div> 
+                    <div class="col">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        
+        </body>
+    </head>
+</html>
